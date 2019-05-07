@@ -10,6 +10,11 @@
 <p>我的第一个段落。</p>
 
 <script>
+
+function fullProtocol() {
+	'ung://main?wd=' + getQueryStringArgs()['room'];
+}
+
 function getQueryStringArgs() {
     //取得查询字符串并去掉开头的问号
     var qs = location.search.length > 0 ? location.search.substring(1):"";
@@ -29,10 +34,24 @@ function getQueryStringArgs() {
     return args;
 }
 
- // function check(){
- //  // var id= window.location.href.split(“=”)[1];
- //  window.location.href='https://www.baidu.com/s?wd=' + getQueryStringArgs()['room'];
- // }
+ function check(){
+ 	// var id= window.location.href.split(“=”)[1];
+  	window.location.href='https://www.baidu.com/s?wd=' + getQueryStringArgs()['room'];
+
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
+        window.location.href = fullProtocol();//ios app协议
+        window.setTimeout(function() {
+            window.location.href = "https://itunes.apple.com/cn/app/id477927812";
+        }, 2000)
+       }
+    if (navigator.userAgent.match(/android/i))
+       {
+        window.location.href = fullProtocol();//android app协议
+        window.setTimeout(function() {
+            window.location.href = "https://****.apk";//android 下载地址
+        }, 2000)    
+    }
+ }
 
 // alert("My First JavaScript: " + getQueryStringArgs()['room']);
 
