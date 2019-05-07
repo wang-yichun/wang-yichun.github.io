@@ -43,14 +43,19 @@ function getQueryStringArgs() {
 
     if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
     	 alert("开始check 是ios " + fullProtocol());
-        window.location.href = 'ung://main';//ios app协议
+    	 window.setTimeout(function() {
+        window.location.href = 'ung://main/main';//ios app协议
+    }, 1000)
         // window.setTimeout(function() {
         //     window.location.href = "https://itunes.apple.com/cn/app/id477927812";
         // }, 2000)
        }
     if (navigator.userAgent.match(/android/i)) {
     	 alert("开始check 是android " + fullProtocol());
-        window.location.href = 'ung://main';//android app协议
+
+    	 window.setTimeout(function() {
+        window.location.href = 'ung://main/main';//android app协议
+    }, 1000)
         // window.setTimeout(function() {
         //     window.location.href = "https://****.apk";//android 下载地址
         // }, 2000)    
