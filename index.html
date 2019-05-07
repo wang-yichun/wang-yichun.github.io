@@ -6,7 +6,7 @@
 <h1>我的第一个标题</h1>
 <h2><a href="http://www.baidu.com">baidu</a></h2>
 <h2><a href="https://www.baidu.com/s?wd=456">进入房间</a></h2>
-<h2><a href="ung://main">ung://main</a></h2>
+<h2><a href="ung://main/main">ung://main/main</a></h2>
 
 <p>我的第一个段落。</p>
 
@@ -43,14 +43,14 @@ function getQueryStringArgs() {
 
     if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
     	 alert("开始check 是ios " + fullProtocol());
-        window.location.href = fullProtocol();//ios app协议
+        window.location.href = 'ung://main';//ios app协议
         // window.setTimeout(function() {
         //     window.location.href = "https://itunes.apple.com/cn/app/id477927812";
         // }, 2000)
        }
     if (navigator.userAgent.match(/android/i)) {
     	 alert("开始check 是android " + fullProtocol());
-        window.location.href = fullProtocol();//android app协议
+        window.location.href = 'ung://main';//android app协议
         // window.setTimeout(function() {
         //     window.location.href = "https://****.apk";//android 下载地址
         // }, 2000)    
