@@ -38,21 +38,21 @@ function getQueryStringArgs() {
  function check(){
  	// var id= window.location.href.split(“=”)[1];
   	// window.location.href='https://www.baidu.com/s?wd=' + getQueryStringArgs()['room'];
- 	alert("开始check " + fullProtocol());
+ 	alert("开始check2 " + fullProtocol());
 
     if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
     	 alert("开始check 是ios " + fullProtocol());
         window.location.href = fullProtocol();//ios app协议
-        window.setTimeout(function() {
-            window.location.href = "https://itunes.apple.com/cn/app/id477927812";
-        }, 2000)
+        // window.setTimeout(function() {
+        //     window.location.href = "https://itunes.apple.com/cn/app/id477927812";
+        // }, 2000)
        }
     if (navigator.userAgent.match(/android/i)) {
     	 alert("开始check 是android " + fullProtocol());
         window.location.href = fullProtocol();//android app协议
-        window.setTimeout(function() {
-            window.location.href = "https://****.apk";//android 下载地址
-        }, 2000)    
+        // window.setTimeout(function() {
+        //     window.location.href = "https://****.apk";//android 下载地址
+        // }, 2000)    
     }
  }
 
