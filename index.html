@@ -40,14 +40,14 @@ function getQueryStringArgs() {
  	alert("开始check");
 
     if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
-    	 alert("开始check 是ios");
+    	 alert("开始check 是ios " + fullProtocol());
         window.location.href = fullProtocol();//ios app协议
         window.setTimeout(function() {
             window.location.href = "https://itunes.apple.com/cn/app/id477927812";
         }, 2000)
        }
     if (navigator.userAgent.match(/android/i)) {
-    	 alert("开始check 是android");
+    	 alert("开始check 是android " + fullProtocol());
         window.location.href = fullProtocol();//android app协议
         window.setTimeout(function() {
             window.location.href = "https://****.apk";//android 下载地址
