@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "indie.ethan.ethandemo",
-    "sha256_cert_fingerprints":
-    ["3B:49:CF:09:18:51:7A:6A:AC:D1:E2:3F:24:D7:CC:9C:5D:DD:DE:A9:04:FF:50:08:52:01:FA:76:B9:0A:41:A9"]
-  }
-}]
