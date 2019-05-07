@@ -12,7 +12,8 @@
 <script>
 
 function fullProtocol() {
-	return 'ung://main?wd=' + getQueryStringArgs()['room'];
+	// return 'ung://main?wd=' + getQueryStringArgs()['room'];
+	return 'ung://main';
 }
 
 function getQueryStringArgs() {
@@ -37,7 +38,7 @@ function getQueryStringArgs() {
  function check(){
  	// var id= window.location.href.split(“=”)[1];
   	// window.location.href='https://www.baidu.com/s?wd=' + getQueryStringArgs()['room'];
- 	alert("开始check");
+ 	alert("开始check " + fullProtocol());
 
     if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
     	 alert("开始check 是ios " + fullProtocol());
